@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="/ico/head-mario.ico" type="image/x-icon">
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    
+    <script src="/js/script.js" defer></script>
+    <title>Super Mario Jump</title>
+</head>
+<body>
+   
+         <div class="score"> Score: 0 </div>
+
+    <section class="start-screen">
+        <h1>Super Mario Jump</h1>
+        <button class="game-button start-button">START</button>
+
+    </section>
+
+    <section class="game-over-screen hidden">
+        <h2> GAME OVER</h2>
+        <p> Score:<span class="final-score">0</span></p>
+        <button class="game-button restart-button">RESTART</button>
+
+    </section>
+
+
+            <div class="game-board">
+            <img src="/images/clouds.png" class="clouds">
+            <img src="/images/pipe.png" class="pipe">
+            <img src="/images/mario.gif" class="mario">
+            <body style="background-image: image-set();"></body>
+         </div>
+
+    
+</body>
+</html>
