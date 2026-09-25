@@ -13,16 +13,16 @@ const finalScoreElement = document.querySelector('.final-score');
 // =========================
 // ÁUDIO MP3
 // =========================
-const menuMusic = new Audio('/sounds/menu.mp3');
-const gameMusic = new Audio('/sounds/game.mp3');
-const jumpSound = new Audio('/sounds/jump.mp3');
-const deathSound = new Audio('/sounds/death.mp3');
+const menuMusic = new Audio('menu.mp3');
+const gameMusic = new Audio('game.mp3');
+const jumpSound = new Audio('jump.mp3');
+const deathSound = new Audio('death.mp3');
 
 menuMusic.loop = true;
 gameMusic.loop = true;
 
 menuMusic.volume = 0.10;
-gameMusic.volume = 0.04;
+gameMusic.volume = 0.05;
 jumpSound.volume = 0.02;
 deathSound.volume = 0.10;
 
@@ -135,7 +135,7 @@ const endGame = () => {
 
     mario.style.animation = 'none';
     mario.style.bottom = `${marioPosition}px`;
-    mario.src = '/images/game-over.png';
+    mario.src = 'game-over.png';
     mario.style.width = '65px';
     mario.style.marginLeft = '60px';
 
@@ -159,7 +159,7 @@ scoreElement.classList.remove('hidden');
     gameOverScreen.classList.add('hidden');
     gameBoard.classList.remove('game-paused');
     gameBoard.classList.add('game-running');
-    mario.src = '/images/mario.gif';
+    mario.src = 'mario.gif';
     mario.style.width = '';
     mario.style.marginLeft = '';
     mario.style.animation = '';
